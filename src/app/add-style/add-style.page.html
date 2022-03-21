@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-back-button slot="start"></ion-back-button> -->
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="style"></ion-back-button>
+    </ion-buttons>
+
+
+    <ion-router-outlet></ion-router-outlet>
+    <ion-title>Formulaire pour ajouter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <form> -->
+    <!-- <ion-item lines="full">
+      <ion-label position="floating">id </ion-label>
+      <ion-input clear-input type="number" required required [(ngModel)]="id"></ion-input>
+    </ion-item> -->
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="nom"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Prix</ion-label>
+      <ion-input clear-input type="number" required [(ngModel)]="prix"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Taille</ion-label>
+      <ion-input clear-input type="number" required [(ngModel)]="taille"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Lien</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="lien"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Histoire</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="histoire"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Image</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="image"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Statut</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="statut"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Catégorie</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="categorie"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Couleur</ion-label>
+      <ion-input clear-input type="string" required [(ngModel)]="couleur"></ion-input>
+    </ion-item>
+
+  <!-- </form> -->
+  <ion-button type="submit" shape="round" fill="outline" (click)="onSubmit()" [routerLink]="['/style']">Valider</ion-button>
+</ion-content>
